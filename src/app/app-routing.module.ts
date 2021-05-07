@@ -15,8 +15,12 @@ const routes: Routes = [
     loadChildren: () => import('./bounty-active/bounty-active.module').then( m => m.BountyActivePageModule)
   },
   {
+    path: 'bounty-claim',
+    loadChildren: () => import('./bounty-claim/bounty-claim.module').then( m => m.BountyClaimPageModule)
+  },
+  {
     path: '',
-    redirectTo: 'bounty-active',
+    redirectTo: 'bounty-board',
     pathMatch: 'full'
   },
 ];

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { BountyDetailPage } from './bounty-detail.page';
+import { BountyClaimPage } from './bounty-claim.page';
 
 const routes: Routes = [
   {
-    path: ':id',
-    component: BountyDetailPage
+    path: '',
+    component: BountyClaimPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class BountyDetailPageRoutingModule {}
+export class BountyClaimPageRoutingModule {}
